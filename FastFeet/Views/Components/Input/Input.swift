@@ -9,12 +9,7 @@ import UIKit
 
 class Input: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
+   
+    // a ideia aqui é tranformar isso em um componente e reutilizar
 
 }
