@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RobotoCondensed-BoldItalic.ttf">
+            <string>RobotoCondensed-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FastFeet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logotipo" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-Ro-b17">
+                                <rect key="frame" x="32" y="76" width="40" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ngb-Ll-9dt"/>
+                                    <constraint firstAttribute="width" constant="40" id="xxT-jR-qvl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FF" translatesAutoresizingMaskIntoConstraints="NO" id="Czq-bn-YI0">
+                                <rect key="frame" x="-56" y="14" width="280" height="312"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="312" id="AuC-dM-Qqj"/>
+                                    <constraint firstAttribute="width" constant="280" id="Y6x-nY-GUt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entregador," lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK7-KY-vcN" userLabel="Label Entregador">
+                                <rect key="frame" x="32" y="206" width="350" height="53"/>
+                                <fontDescription key="fontDescription" name="RobotoCondensed-BoldItalic" family="Roboto Condensed" pointSize="45"/>
+                                <color key="textColor" red="0.97778075929999997" green="0.75373059509999996" blue="0.2610523105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="você é nosso maior valor" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-8j-69M">
+                                <rect key="frame" x="32" y="259" width="350" height="105.5"/>
+                                <fontDescription key="fontDescription" name="RobotoCondensed-BoldItalic" family="Roboto Condensed" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulm-9k-NFh">
+                                <rect key="frame" x="32" y="380.5" width="352" height="39.5"/>
+                                <string key="text">Faça seu login para
+começar suas entregas.</string>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-gW-cGP">
+                                <rect key="frame" x="266" y="86" width="128" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="FUT-5b-rDf"/>
+                                    <constraint firstAttribute="height" constant="24" id="nZm-ge-YSt"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gQR-Z6-wmF">
+                                <rect key="frame" x="32" y="436" width="350" height="426"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.29646337029999997" green="0.2009450197" blue="0.80106776950000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IKa-8j-69M" secondAttribute="trailing" constant="32" id="2Ab-n8-E95"/>
+                            <constraint firstItem="IKa-8j-69M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="5I1-qy-MsA"/>
+                            <constraint firstItem="ulm-9k-NFh" firstAttribute="top" secondItem="IKa-8j-69M" secondAttribute="bottom" constant="16" id="ATM-Pv-4SB"/>
+                            <constraint firstItem="gQR-Z6-wmF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="DlV-Hi-jcw"/>
+                            <constraint firstItem="Ne7-Ro-b17" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="EOF-SS-kMX"/>
+                            <constraint firstItem="bpe-gW-cGP" firstAttribute="top" secondItem="Ne7-Ro-b17" secondAttribute="top" constant="10" id="EwD-DN-6Nd"/>
+                            <constraint firstItem="XK7-KY-vcN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Hoj-Au-uGP"/>
+                            <constraint firstItem="IKa-8j-69M" firstAttribute="top" secondItem="XK7-KY-vcN" secondAttribute="bottom" id="Qam-jr-hpn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XK7-KY-vcN" secondAttribute="trailing" constant="32" id="UNg-HH-6cX"/>
+                            <constraint firstItem="Ne7-Ro-b17" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="XCX-D5-Buz"/>
+                            <constraint firstItem="XK7-KY-vcN" firstAttribute="top" secondItem="Ne7-Ro-b17" secondAttribute="bottom" constant="86" id="a8c-hq-cMt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQR-Z6-wmF" secondAttribute="trailing" constant="32" id="cfL-Vq-6Mz"/>
+                            <constraint firstItem="Czq-bn-YI0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-30" id="f74-F5-xfj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpe-gW-cGP" secondAttribute="trailing" constant="20" id="fu3-mA-H3y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQR-Z6-wmF" secondAttribute="bottom" id="gJe-dl-r6h"/>
+                            <constraint firstItem="Czq-bn-YI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-56" id="kKt-On-RfS"/>
+                            <constraint firstItem="ulm-9k-NFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="tL7-ru-7Kl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ulm-9k-NFh" secondAttribute="trailing" constant="30" id="ue4-Ub-1o5"/>
+                            <constraint firstItem="gQR-Z6-wmF" firstAttribute="top" secondItem="ulm-9k-NFh" secondAttribute="bottom" constant="16" id="y9q-Y8-8v3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FF" width="188" height="316"/>
+        <image name="Logo" width="128" height="24"/>
+        <image name="Logotipo" width="40" height="44"/>
+    </resources>
+</document>

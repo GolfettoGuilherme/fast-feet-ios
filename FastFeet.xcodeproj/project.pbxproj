@@ -13,6 +13,12 @@
 		0E32A3F325E5E7110021FE8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A3F125E5E7110021FE8B /* Main.storyboard */; };
 		0E32A3F525E5E7150021FE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A3F425E5E7150021FE8B /* Assets.xcassets */; };
 		0E32A3F825E5E7150021FE8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A3F625E5E7150021FE8B /* LaunchScreen.storyboard */; };
+		0E32A40525E5E8150021FE8B /* Logotipo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A40425E5E8150021FE8B /* Logotipo.svg */; };
+		0E32A40A25E5E8840021FE8B /* FF.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A40925E5E8840021FE8B /* FF.svg */; };
+		0E32A41025E5E97C0021FE8B /* Logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A40F25E5E97C0021FE8B /* Logo.svg */; };
+		0E32A41425E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A41325E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf */; };
+		0E32A41925E5F04B0021FE8B /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A41825E5F04B0021FE8B /* Input.swift */; };
+		0E32A41D25E5F0600021FE8B /* Input.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A41C25E5F0600021FE8B /* Input.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		0E32A3F425E5E7150021FE8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E32A3F725E5E7150021FE8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E32A3F925E5E7150021FE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E32A40425E5E8150021FE8B /* Logotipo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Logotipo.svg; sourceTree = "<group>"; };
+		0E32A40925E5E8840021FE8B /* FF.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FF.svg; sourceTree = "<group>"; };
+		0E32A40F25E5E97C0021FE8B /* Logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Logo.svg; sourceTree = "<group>"; };
+		0E32A41325E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0E32A41825E5F04B0021FE8B /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		0E32A41C25E5F0600021FE8B /* Input.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Input.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		0E32A3EA25E5E7110021FE8B /* FastFeet */ = {
 			isa = PBXGroup;
 			children = (
+				0E32A40225E5E72B0021FE8B /* Models */,
+				0E32A40125E5E7260021FE8B /* Controllers */,
+				0E32A40025E5E7210021FE8B /* Views */,
 				0E32A3EB25E5E7110021FE8B /* AppDelegate.swift */,
 				0E32A3ED25E5E7110021FE8B /* SceneDelegate.swift */,
-				0E32A3EF25E5E7110021FE8B /* ViewController.swift */,
-				0E32A3F125E5E7110021FE8B /* Main.storyboard */,
+				0E32A40C25E5E8870021FE8B /* Assets */,
 				0E32A3F425E5E7150021FE8B /* Assets.xcassets */,
 				0E32A3F625E5E7150021FE8B /* LaunchScreen.storyboard */,
 				0E32A3F925E5E7150021FE8B /* Info.plist */,
 			);
 			path = FastFeet;
+			sourceTree = "<group>";
+		};
+		0E32A40025E5E7210021FE8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E32A41625E5F0070021FE8B /* Components */,
+				0E32A3F125E5E7110021FE8B /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0E32A40125E5E7260021FE8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E32A3EF25E5E7110021FE8B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0E32A40225E5E72B0021FE8B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E32A40C25E5E8870021FE8B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0E32A41225E5EA800021FE8B /* fonts */,
+				0E32A40F25E5E97C0021FE8B /* Logo.svg */,
+				0E32A40425E5E8150021FE8B /* Logotipo.svg */,
+				0E32A40925E5E8840021FE8B /* FF.svg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0E32A41225E5EA800021FE8B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0E32A41325E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		0E32A41625E5F0070021FE8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0E32A41725E5F0300021FE8B /* Input */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0E32A41725E5F0300021FE8B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				0E32A41825E5F04B0021FE8B /* Input.swift */,
+				0E32A41C25E5F0600021FE8B /* Input.xib */,
+			);
+			path = Input;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +198,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E32A41425E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				0E32A40A25E5E8840021FE8B /* FF.svg in Resources */,
+				0E32A41D25E5F0600021FE8B /* Input.xib in Resources */,
 				0E32A3F825E5E7150021FE8B /* LaunchScreen.storyboard in Resources */,
 				0E32A3F525E5E7150021FE8B /* Assets.xcassets in Resources */,
 				0E32A3F325E5E7110021FE8B /* Main.storyboard in Resources */,
+				0E32A40525E5E8150021FE8B /* Logotipo.svg in Resources */,
+				0E32A41025E5E97C0021FE8B /* Logo.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +218,7 @@
 			files = (
 				0E32A3F025E5E7110021FE8B /* ViewController.swift in Sources */,
 				0E32A3EC25E5E7110021FE8B /* AppDelegate.swift in Sources */,
+				0E32A41925E5F04B0021FE8B /* Input.swift in Sources */,
 				0E32A3EE25E5E7110021FE8B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
