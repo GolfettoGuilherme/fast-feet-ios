@@ -18,17 +18,29 @@ class TextField: UITextField {
     }
     
     
-    func inicializadorDeComponentes(image: String,placeholderText: String){
-        
+    func inicializadorDeComponentes(image: String,placeholderText: String, type: TextFieldType){
         placeholder = placeholderText
-       
-        let iconView = UIButton(frame: CGRect(x: 10, y: 5, width: 20, height: 20))
+            
+        let iconView = UIButton(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
         iconView.setImage(UIImage(named: image), for: .normal)
         
-        let iconContainerView = UIView(frame: CGRect(x: 20, y: 0, width: 30, height: 30))
+        let iconContainerView = UIView(frame: CGRect(x: 20, y: 0, width: 50, height: 50))
         iconContainerView.addSubview(iconView)
         
-        iconView.addTarget(self, action: "ShoudlBeSecureEntry", for: .touchUpInside)
+        if type == .password {
+            
+            let iconShowPasswordView = UIButton(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+            iconShowPasswordView.setImage(UIImage(named: "Eye Open"), for: .normal)
+            
+            iconShowPasswordView.addTarget(self, action: #selector(self.ShoudlBeSecureEntry(sender:)), for: .touchUpInside)
+            
+            let containerShowPassword = UIView(frame: CGRect(x: 20, y: 0, width: 50, height: 50))
+            containerShowPassword.addSubview(iconShowPasswordView)
+            
+            rightView = containerShowPassword
+            rightViewMode = .always
+            
+        }
         
         leftView = iconContainerView
         leftViewMode = .always
@@ -36,8 +48,10 @@ class TextField: UITextField {
     }
     
     @objc
-    func ShoudlBeSecureEntry(){
+    func ShoudlBeSecureEntry(sender: UIButton){
         isSecureTextEntry = !isSecureTextEntry
+
+        sender.setImage(UIImage(named:isSecureTextEntry ? "Eye Open" : "Eye Closed" ), for: .normal)
     }
     
     

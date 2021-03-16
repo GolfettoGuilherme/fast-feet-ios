@@ -20,6 +20,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-gW-cGP">
+                                <rect key="frame" x="266" y="86" width="128" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="FUT-5b-rDf"/>
+                                    <constraint firstAttribute="height" constant="24" id="nZm-ge-YSt"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logotipo" translatesAutoresizingMaskIntoConstraints="NO" id="Ne7-Ro-b17">
                                 <rect key="frame" x="32" y="76" width="40" height="44"/>
                                 <constraints>
@@ -54,34 +61,48 @@ começar suas entregas.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-gW-cGP">
-                                <rect key="frame" x="266" y="86" width="128" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="FUT-5b-rDf"/>
-                                    <constraint firstAttribute="height" constant="24" id="nZm-ge-YSt"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gQR-Z6-wmF">
-                                <rect key="frame" x="32" y="510" width="350" height="292"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="242" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gQR-Z6-wmF">
+                                <rect key="frame" x="32" y="480" width="350" height="337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sE3-BL-1Vh" customClass="TextField" customModule="FastFeet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="65.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="80.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daL-3K-Z2N" customClass="TextField" customModule="FastFeet" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="75.5" width="350" height="65.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="85.5" width="350" height="80.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjj-kS-PR0">
-                                        <rect key="frame" x="0.0" y="151" width="350" height="65.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Skp-wl-Yhu">
+                                        <rect key="frame" x="0.0" y="171" width="350" height="80.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUP-0j-OWg">
+                                                <rect key="frame" x="0.0" y="0.0" width="76.5" height="80.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembrar-me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmR-RE-oWK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="80.5"/>
+                                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5k-8H-mgi">
+                                                <rect key="frame" x="225" y="0.0" width="125" height="80.5"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                                <state key="normal" title="Esqueci minha senha">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ1-Rz-yH2">
-                                        <rect key="frame" x="0.0" y="226.5" width="350" height="65.5"/>
-                                        <color key="backgroundColor" red="0.78142529729999999" green="0.59687906499999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="0.0" y="256.5" width="350" height="80.5"/>
+                                        <color key="backgroundColor" red="0.97778075929999997" green="0.75373059509999996" blue="0.2610523105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="20"/>
+                                        <state key="normal" title="Entrar">
+                                            <color key="titleColor" red="0.29646337029999997" green="0.2009450197" blue="0.80106776950000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="btnLogarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHz-g2-M0N"/>
@@ -107,14 +128,15 @@ começar suas entregas.</string>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQR-Z6-wmF" secondAttribute="trailing" constant="32" id="cfL-Vq-6Mz"/>
                             <constraint firstItem="Czq-bn-YI0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-30" id="f74-F5-xfj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpe-gW-cGP" secondAttribute="trailing" constant="20" id="fu3-mA-H3y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQR-Z6-wmF" secondAttribute="bottom" constant="60" id="gJe-dl-r6h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQR-Z6-wmF" secondAttribute="bottom" constant="45" id="gJe-dl-r6h"/>
                             <constraint firstItem="Czq-bn-YI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-56" id="kKt-On-RfS"/>
                             <constraint firstItem="ulm-9k-NFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="tL7-ru-7Kl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ulm-9k-NFh" secondAttribute="trailing" constant="30" id="ue4-Ub-1o5"/>
-                            <constraint firstItem="gQR-Z6-wmF" firstAttribute="top" secondItem="ulm-9k-NFh" secondAttribute="bottom" constant="90" id="y9q-Y8-8v3"/>
+                            <constraint firstItem="gQR-Z6-wmF" firstAttribute="top" secondItem="ulm-9k-NFh" secondAttribute="bottom" constant="60" id="y9q-Y8-8v3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnLogar" destination="LQ1-Rz-yH2" id="hcF-gR-xIp"/>
                         <outlet property="txtCpf" destination="sE3-BL-1Vh" id="DNC-6e-Ulj"/>
                         <outlet property="txtSenha" destination="daL-3K-Z2N" id="tW8-eR-Pxu"/>
                     </connections>

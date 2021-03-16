@@ -11,12 +11,18 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var txtCpf: TextField!
     
+    @IBOutlet weak var btnLogar: UIButton!
+    
     @IBOutlet weak var txtSenha: TextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        txtCpf.inicializadorDeComponentes(image: "Man", placeholderText: "CPF")
-        txtSenha.inicializadorDeComponentes(image: "Man", placeholderText: "Senha")
+        
+        btnLogar.layer.cornerRadius = 8
+        btnLogar.clipsToBounds = true
+        
+        txtCpf.inicializadorDeComponentes(image: "Man", placeholderText: "CPF", type: .text)
+        txtSenha.inicializadorDeComponentes(image: "Lock", placeholderText: "Senha", type: .password)
     }
     
     @IBAction func btnLogarClick(_ sender: UIButton) {
