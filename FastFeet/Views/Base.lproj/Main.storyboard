@@ -61,8 +61,33 @@ começar suas entregas.</string>
                                     <constraint firstAttribute="height" constant="24" id="nZm-ge-YSt"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gQR-Z6-wmF">
-                                <rect key="frame" x="32" y="436" width="350" height="426"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gQR-Z6-wmF">
+                                <rect key="frame" x="32" y="510" width="350" height="292"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sE3-BL-1Vh" customClass="TextField" customModule="FastFeet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="daL-3K-Z2N" customClass="TextField" customModule="FastFeet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="75.5" width="350" height="65.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kjj-kS-PR0">
+                                        <rect key="frame" x="0.0" y="151" width="350" height="65.5"/>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ1-Rz-yH2">
+                                        <rect key="frame" x="0.0" y="226.5" width="350" height="65.5"/>
+                                        <color key="backgroundColor" red="0.78142529729999999" green="0.59687906499999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnLogarClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHz-g2-M0N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,13 +107,17 @@ começar suas entregas.</string>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQR-Z6-wmF" secondAttribute="trailing" constant="32" id="cfL-Vq-6Mz"/>
                             <constraint firstItem="Czq-bn-YI0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-30" id="f74-F5-xfj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bpe-gW-cGP" secondAttribute="trailing" constant="20" id="fu3-mA-H3y"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQR-Z6-wmF" secondAttribute="bottom" id="gJe-dl-r6h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQR-Z6-wmF" secondAttribute="bottom" constant="60" id="gJe-dl-r6h"/>
                             <constraint firstItem="Czq-bn-YI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-56" id="kKt-On-RfS"/>
                             <constraint firstItem="ulm-9k-NFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="tL7-ru-7Kl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ulm-9k-NFh" secondAttribute="trailing" constant="30" id="ue4-Ub-1o5"/>
-                            <constraint firstItem="gQR-Z6-wmF" firstAttribute="top" secondItem="ulm-9k-NFh" secondAttribute="bottom" constant="16" id="y9q-Y8-8v3"/>
+                            <constraint firstItem="gQR-Z6-wmF" firstAttribute="top" secondItem="ulm-9k-NFh" secondAttribute="bottom" constant="90" id="y9q-Y8-8v3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="txtCpf" destination="sE3-BL-1Vh" id="DNC-6e-Ulj"/>
+                        <outlet property="txtSenha" destination="daL-3K-Z2N" id="tW8-eR-Pxu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

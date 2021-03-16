@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0ABDD626002C58005F8F24 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABDD526002C58005F8F24 /* TextField.swift */; };
+		0E0ABDD92600301E005F8F24 /* Man.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0E0ABDD82600301E005F8F24 /* Man.svg */; };
 		0E32A3EC25E5E7110021FE8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A3EB25E5E7110021FE8B /* AppDelegate.swift */; };
 		0E32A3EE25E5E7110021FE8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A3ED25E5E7110021FE8B /* SceneDelegate.swift */; };
 		0E32A3F025E5E7110021FE8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A3EF25E5E7110021FE8B /* ViewController.swift */; };
@@ -17,11 +19,11 @@
 		0E32A40A25E5E8840021FE8B /* FF.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A40925E5E8840021FE8B /* FF.svg */; };
 		0E32A41025E5E97C0021FE8B /* Logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A40F25E5E97C0021FE8B /* Logo.svg */; };
 		0E32A41425E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A41325E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf */; };
-		0E32A41925E5F04B0021FE8B /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A41825E5F04B0021FE8B /* Input.swift */; };
-		0E32A41D25E5F0600021FE8B /* Input.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A41C25E5F0600021FE8B /* Input.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0ABDD526002C58005F8F24 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		0E0ABDD82600301E005F8F24 /* Man.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Man.svg; sourceTree = "<group>"; };
 		0E32A3E825E5E7110021FE8B /* FastFeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastFeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E32A3EB25E5E7110021FE8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E32A3ED25E5E7110021FE8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +36,6 @@
 		0E32A40925E5E8840021FE8B /* FF.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FF.svg; sourceTree = "<group>"; };
 		0E32A40F25E5E97C0021FE8B /* Logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Logo.svg; sourceTree = "<group>"; };
 		0E32A41325E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
-		0E32A41825E5F04B0021FE8B /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
-		0E32A41C25E5F0600021FE8B /* Input.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Input.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +110,7 @@
 			children = (
 				0E32A41225E5EA800021FE8B /* fonts */,
 				0E32A40F25E5E97C0021FE8B /* Logo.svg */,
+				0E0ABDD82600301E005F8F24 /* Man.svg */,
 				0E32A40425E5E8150021FE8B /* Logotipo.svg */,
 				0E32A40925E5E8840021FE8B /* FF.svg */,
 			);
@@ -135,8 +136,7 @@
 		0E32A41725E5F0300021FE8B /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				0E32A41825E5F04B0021FE8B /* Input.swift */,
-				0E32A41C25E5F0600021FE8B /* Input.xib */,
+				0E0ABDD526002C58005F8F24 /* TextField.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -200,8 +200,8 @@
 			files = (
 				0E32A41425E5EA8E0021FE8B /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				0E32A40A25E5E8840021FE8B /* FF.svg in Resources */,
-				0E32A41D25E5F0600021FE8B /* Input.xib in Resources */,
 				0E32A3F825E5E7150021FE8B /* LaunchScreen.storyboard in Resources */,
+				0E0ABDD92600301E005F8F24 /* Man.svg in Resources */,
 				0E32A3F525E5E7150021FE8B /* Assets.xcassets in Resources */,
 				0E32A3F325E5E7110021FE8B /* Main.storyboard in Resources */,
 				0E32A40525E5E8150021FE8B /* Logotipo.svg in Resources */,
@@ -218,8 +218,8 @@
 			files = (
 				0E32A3F025E5E7110021FE8B /* ViewController.swift in Sources */,
 				0E32A3EC25E5E7110021FE8B /* AppDelegate.swift in Sources */,
-				0E32A41925E5F04B0021FE8B /* Input.swift in Sources */,
 				0E32A3EE25E5E7110021FE8B /* SceneDelegate.swift in Sources */,
+				0E0ABDD626002C58005F8F24 /* TextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
