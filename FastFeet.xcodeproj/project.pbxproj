@@ -10,7 +10,7 @@
 		0E0ABDD626002C58005F8F24 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0ABDD526002C58005F8F24 /* TextField.swift */; };
 		0E32A3EC25E5E7110021FE8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A3EB25E5E7110021FE8B /* AppDelegate.swift */; };
 		0E32A3EE25E5E7110021FE8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A3ED25E5E7110021FE8B /* SceneDelegate.swift */; };
-		0E32A3F025E5E7110021FE8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A3EF25E5E7110021FE8B /* ViewController.swift */; };
+		0E32A3F025E5E7110021FE8B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E32A3EF25E5E7110021FE8B /* HomeViewController.swift */; };
 		0E32A3F325E5E7110021FE8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A3F125E5E7110021FE8B /* Main.storyboard */; };
 		0E32A3F525E5E7150021FE8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A3F425E5E7150021FE8B /* Assets.xcassets */; };
 		0E32A3F825E5E7150021FE8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E32A3F625E5E7150021FE8B /* LaunchScreen.storyboard */; };
@@ -23,6 +23,7 @@
 		0EC264AF2600555E00F4C17A /* Eye Open.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0EC264AE2600555E00F4C17A /* Eye Open.svg */; };
 		0EC264B2260056A100F4C17A /* Eye Closed.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0EC264B1260056A100F4C17A /* Eye Closed.svg */; };
 		0EC264B62600581F00F4C17A /* Man.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0EC264B52600581F00F4C17A /* Man.svg */; };
+		8BD7A975260BE7A4006EB979 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7A974260BE7A4006EB979 /* ForgotPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +31,7 @@
 		0E32A3E825E5E7110021FE8B /* FastFeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastFeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E32A3EB25E5E7110021FE8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E32A3ED25E5E7110021FE8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E32A3EF25E5E7110021FE8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E32A3EF25E5E7110021FE8B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0E32A3F225E5E7110021FE8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E32A3F425E5E7150021FE8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E32A3F725E5E7150021FE8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		0EC264AE2600555E00F4C17A /* Eye Open.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Eye Open.svg"; sourceTree = "<group>"; };
 		0EC264B1260056A100F4C17A /* Eye Closed.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Eye Closed.svg"; sourceTree = "<group>"; };
 		0EC264B52600581F00F4C17A /* Man.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Man.svg; sourceTree = "<group>"; };
+		8BD7A974260BE7A4006EB979 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,8 @@
 		0E32A40125E5E7260021FE8B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0E32A3EF25E5E7110021FE8B /* ViewController.swift */,
+				0E32A3EF25E5E7110021FE8B /* HomeViewController.swift */,
+				8BD7A974260BE7A4006EB979 /* ForgotPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,8 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E32A3F025E5E7110021FE8B /* ViewController.swift in Sources */,
+				0E32A3F025E5E7110021FE8B /* HomeViewController.swift in Sources */,
 				0E32A3EC25E5E7110021FE8B /* AppDelegate.swift in Sources */,
+				8BD7A975260BE7A4006EB979 /* ForgotPasswordViewController.swift in Sources */,
 				0E32A3EE25E5E7110021FE8B /* SceneDelegate.swift in Sources */,
 				0E0ABDD626002C58005F8F24 /* TextField.swift in Sources */,
 				0EC264AA2600546800F4C17A /* TextFieldType.swift in Sources */,

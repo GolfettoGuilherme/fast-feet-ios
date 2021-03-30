@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -56,4 +56,3 @@ class ViewController: UIViewController {
     }
     
 }
-
