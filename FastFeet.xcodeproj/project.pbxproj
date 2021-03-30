@@ -45,6 +45,7 @@
 		0EC264AE2600555E00F4C17A /* Eye Open.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Eye Open.svg"; sourceTree = "<group>"; };
 		0EC264B1260056A100F4C17A /* Eye Closed.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Eye Closed.svg"; sourceTree = "<group>"; };
 		0EC264B52600581F00F4C17A /* Man.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Man.svg; sourceTree = "<group>"; };
+		0EFE97222612C83400E39115 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8BD7A974260BE7A4006EB979 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +63,7 @@
 		0E32A3DF25E5E7110021FE8B = {
 			isa = PBXGroup;
 			children = (
+				0EFE97222612C83400E39115 /* README.md */,
 				0E32A3EA25E5E7110021FE8B /* FastFeet */,
 				0E32A3E925E5E7110021FE8B /* Products */,
 			);
