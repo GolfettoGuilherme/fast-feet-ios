@@ -1,0 +1,14 @@
+{
+  "get": {
+    "name": "Frederico",
+    "xpto": {
+      "Mae": "Josefa",
+      "Idade": 70,
+      "Relacao": "Pai"
+    },
+    "idade": 12
+  },
+  "post": {
+    "{\"ClientId\":13}": ""
+  }
+}
