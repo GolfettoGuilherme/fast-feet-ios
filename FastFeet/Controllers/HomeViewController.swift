@@ -26,8 +26,8 @@ class HomeViewController: UIViewController {
         txtCpf.inicializadorDeComponentes(image: "Man", placeholderText: "CPF", type: .text)
         txtSenha.inicializadorDeComponentes(image: "Lock", placeholderText: "Senha", type: .password)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
+        //NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
 
     }
     
